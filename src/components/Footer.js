@@ -25,7 +25,7 @@ function Footer() {
 
   const FooterText = styled('p')({
     color: 'inherit',
-    fontSize: isMobile ? '8px' : '10px', // Adjust font size for mobile
+    fontSize: isMobile ? '8px' : '10px',
   });
 
   const LinkStyle = styled('a')({

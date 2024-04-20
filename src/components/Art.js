@@ -44,21 +44,6 @@ function Art() {
         flex: 1,
         flexDirection: isMobile ? 'column' : 'row',
     });
-
-    //const ArtCardContent = styled(CardContent)(
-    //    ({ theme }) => ({
-    //      display: 'flex',
-    //      flex: 1,
-    //      flexDirection: 'row', // Default direction is row
-    //      [theme.breakpoints.down('sm')]: {
-    //        flexDirection: 'column', // Change direction to column on small screens
-    //      },
-    //      [theme.breakpoints.between('md', 'lg')]: {
-    //        flexDirection: 'row',
-    //      },
-          // Add more breakpoints and corresponding styles as needed
-    //    })
-    //  );
     
     const InfoDiv = styled('div')({
         display: 'flex',
@@ -94,7 +79,6 @@ function Art() {
         });
     }, []);
 
-    // Check if artData not null
     const sortedArtData = artData ? [...artData].sort((a, b) => new Date(b.date) - new Date(a.date)) : [];
 
     return (
@@ -127,20 +111,3 @@ function Art() {
 }
 
 export default Art;
-
-/*
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-
-function Art() {
-    //const theme = useTheme(); // Access the theme object
-
-    return (
-     <Box>
-        <Typography>Art</Typography>
-     </Box>
-    );
-}
-
-export default Art;
-*/

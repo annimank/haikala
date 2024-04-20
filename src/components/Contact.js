@@ -43,7 +43,7 @@ function Contact() {
 
   const Text = styled(Typography)({
     margin: '20px',
-    fontSize: '1.375rem', // Convert pixel value to rem
+    fontSize: '1.375rem',
   });
 
   const FormBox = styled(Box)({
@@ -60,7 +60,7 @@ function Contact() {
   const Label = styled('label')({
     marginBottom: '5px',
     fontWeight: 'bold',
-    fontSize: '1.125rem', // Convert pixel value to rem
+    fontSize: '1.125rem',
   });
 
   const Input = styled('input')({
@@ -68,7 +68,7 @@ function Contact() {
     marginBottom: '10px',
     border: '1px solid #ccc',
     borderRadius: '4px',
-    fontSize: '0.875rem', // Convert pixel value to rem
+    fontSize: '0.875rem',
     outline: 'none',
     backgroundColor: theme.palette.background.secondary,
   });
@@ -78,7 +78,7 @@ function Contact() {
     marginBottom: '10px',
     border: '1px solid #ccc',
     borderRadius: '4px',
-    fontSize: '0.875rem', // Convert pixel value to rem
+    fontSize: '0.875rem',
     height: '100px',
     resize: 'vertical',
     outline: 'none',
@@ -92,7 +92,7 @@ function Contact() {
     borderWidth: '0px',
     borderColor: '#252323',
     borderRadius: '20px',
-    fontSize: '1rem', // Convert pixel value to rem
+    fontSize: '1rem',
     cursor: 'pointer',
     outline: 'none',
     marginRight: '5px',
@@ -166,21 +166,3 @@ function Contact() {
 };
 
 export default Contact;
-
-
-/*
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-
-function Contact() {
-    //const theme = useTheme(); // Access the theme object
-
-    return (
-     <Box>
-        <Typography>Contact</Typography>
-     </Box>
-    );
-}
-
-export default Contact;
-*/

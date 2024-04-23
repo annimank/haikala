@@ -5,12 +5,18 @@ import { Outlet, Link } from 'react-router-dom';
 function Menu() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  
+
   const StyledTab = styled(Tab)({
     textTransform: 'none',
     fontWeight: 'bold',
     color: theme.palette.secondary.main,
-    fontSize: '24px',
+    fontSize: isMobile ? '1.25rem' : '1.625rem',
+    '&:hover': {
+      color: theme.palette.secondary.main,
+    },
+    '&.Mui-selected': {
+      color: theme.palette.secondary.main,
+    },
   });
 
   const StyledAppBar = styled(AppBar)({
@@ -42,7 +48,7 @@ function Menu() {
           textColor='inherit'
         >
           {!isMobile && (
-            <StyledTab sx={{ flexGrow: 5 }} component={Link} to='/Home' icon={<img src="../assets/ogol.svg" alt="Logo" style={{ maxWidth: isMobile ? '60%' : '80%', height: 'auto' }} />} />
+            <StyledTab sx={{ flexGrow: 3 }} component={Link} to='/Home' icon={<img src="../assets/ogol.svg" alt="Logo" style={{ maxWidth: '60%', height: 'auto' }} />} />
           )}
           <StyledTab sx={{ flexGrow: 1 }} label='About' component={Link} to='/About' />
           <StyledTab sx={{ flexGrow: 1 }} label='Art' component={Link} to='/Art' />

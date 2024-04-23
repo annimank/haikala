@@ -19,23 +19,22 @@ const database = getDatabase(app);
 function Art() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-    //const isLarge = useMediaQuery(theme.breakpoints.down('lg'));
 
     const LogoBox = styled(Box) ({
-        marginBottom: '50px',
+        marginBottom: '3.125rem',
     });
-
+    
     const LogoLink = styled(Link)({
         display: 'block',
         margin: '0 auto',
-        width: '90%',
+        width: '80%',
         textAlign: 'center',
         height: 'auto',
     });
-
+    
     const ArtCard = styled(Card)({
         width: isMobile ? '100%' : '80%',
-        marginBottom: '16px',
+        marginBottom: '1rem',
         backgroundColor: theme.palette.background.default,
     });
     
@@ -47,7 +46,7 @@ function Art() {
     
     const InfoDiv = styled('div')({
         display: 'flex',
-        flex: isMobile ? 1 : 1,
+        flex: 1,
         flexDirection: 'column',
         marginTop: isMobile ? '0px' : '20%',
     });

@@ -9,17 +9,17 @@ function Home() {
     const MainBox = styled(Box)({
         display: "flex",
         flexDirection: "column",
-        marginBottom: '100px',
+        marginBottom: '2.5rem',
     });
 
     const LogoBox = styled(Box) ({
-        marginBottom: '50px',
+        marginBottom: '1.25rem',
     });
 
     const LogoLink = styled(Link)({
         display: 'block',
         margin: '0 auto',
-        width: '90%',
+        width: '80%',
         textAlign: 'center',
         height: 'auto',
     });
@@ -37,7 +37,7 @@ function Home() {
     const HomeImg = styled('img')({
         maxWidth: '100%',
         height: 'auto',
-        padding: isMobile ? '0px' : '15px',
+        padding: isMobile ? '0px' : '0.9375rem', 
     });
 
     return (
@@ -62,3 +62,4 @@ function Home() {
 }
 
 export default Home;
+

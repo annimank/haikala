@@ -12,25 +12,25 @@ function About() {
         flexDirection: "column",
     });
 
-    const LogoBox = styled(Box) ({
-        marginBottom: '50px',
+    const LogoBox = styled(Box)({
+        marginBottom: '3.125rem',
     });
 
     const LogoLink = styled(Link)({
         display: 'block',
         margin: '0 auto',
-        width: '90%',
+        width: '80%',
         textAlign: 'center',
         height: 'auto',
     });
 
     const ContentBox = styled(Box)({
-        marginBottom: '50px',
-        display: "flex", 
+        marginBottom: '3.125rem',
+        display: "flex",
         flexDirection: isMobile ? 'column' : 'row',
     });
 
-    const Content = styled(Box) ({
+    const Content = styled(Box)({
         flex: 1,
         maxWidth: '100%',
         height: 'auto',
@@ -38,12 +38,12 @@ function About() {
     });
 
     const TextBox = styled(Box)({
-        padding: '15px',
+        padding: '1.25rem',
     });
 
     const Text = styled(Typography)({
         fontFamily: 'Roboto Condensed, sans-serif',
-        fontSize: '18px',
+        fontSize: '1.125rem',
         fontOpticalSizing: 'auto',
         fontStyle: 'normal',
         fontWeight: 'normal',
@@ -51,10 +51,11 @@ function About() {
     });
 
     const Img = styled('img')({
-        maxWidth: '100%', 
-        height: 'auto', 
-        padding: isMobile ? '0px' : '15px',
+        maxWidth: '100%',
+        height: 'auto',
+        padding: isMobile ? '0px' : '0.9375rem',
     });
+
 
 
     return (
@@ -70,22 +71,22 @@ function About() {
                 <Content>
                     <TextBox>
                         <Text>
-                            Unsettling Company was founded in the summer of 2023 by Nelli Pöyry and Anni Mankki in Helsinki.
+                            Unsettling Company was founded in Helsinki in the summer of 2023. We create art and content in multiple formats and styles. 
                         </Text>
                     </TextBox>
                     <TextBox>
                         <Text>
-                            At Unsettling Company, we celebrate the avant-garde, the unconventional, and the thought-provoking. As a contemporary art company, we thrive on pushing boundaries and challenging the status quo. Our mission is to redefine the notion of art, igniting conversations, and evoking emotions that linger long after the encounter.
+                            Unsettling Company makes art that's just a little unsettling. We want to awaken emotions by creating exciting content and unique experiences.
                         </Text>
                     </TextBox>
                     <TextBox>
                         <Text>
-                            Founded on the belief that art should unsettle, inspire, and captivate, we curate a diverse collection that reflects the dynamism of today's artistic landscape. From abstract expressionism to digital innovation, our repertoire spans across mediums, inviting viewers to immerse themselves in a realm of boundless creativity.
+                            Founded on the belief that art should unsettle, inspire and captivate, we invite the viewer to celebrate the unconventional and the thought-provoking.
                         </Text>
                     </TextBox>
                     <TextBox>
                         <Text>
-                            At the heart of Unsettling Company lies a commitment to fostering emerging talents and amplifying underrepresented voices. We serve as a platform for artists who dare to defy convention, providing them with the visibility and support needed to share their distinct perspectives with the world.
+                            We are here to make an impact. Do you dare join us?
                         </Text>
                     </TextBox>
                 </Content>

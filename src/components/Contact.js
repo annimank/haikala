@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import SendIcon from '@mui/icons-material/Send';
+//import SendIcon from '@mui/icons-material/Send';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import { Box, Typography, styled, useTheme, useMediaQuery } from '@mui/material';
@@ -19,30 +19,30 @@ function Contact() {
     display: 'flex',
     flexDirection: isMobile ? 'column' : 'row',
     justifyContent: 'center',
-    marginTop: isMobile ? '0px' : '80px',
-    marginBottom: isMobile ? '30px' : '500px',
+    marginTop: isMobile ? '0px' : '10rem',
+    marginBottom: isMobile ? '1.87rem' : '15.25rem',
   });
 
   const LogoBox = styled(Box)({
-    marginBottom: '50px',
+    marginBottom: '3.125rem',
   });
 
   const LogoLink = styled(Link)({
     display: 'block',
     margin: '0 auto',
-    width: '90%',
+    width: '80%',
     textAlign: 'center',
     height: 'auto',
   });
 
   const ContactText = styled(Box)({
     flex: 1,
-    marginBottom: '50px',
+    marginBottom: '3.125rem',
     textAlign: 'center',
   });
 
   const Text = styled(Typography)({
-    margin: '20px',
+    margin: '1.25rem',
     fontSize: '1.375rem',
   });
 
@@ -55,47 +55,49 @@ function Contact() {
     flexDirection: 'column',
     maxWidth: '80%',
     margin: '0 auto',
+    alignContent: 'center',
   });
 
   const Label = styled('label')({
-    marginBottom: '5px',
+    marginBottom: '0.625rem',
     fontWeight: 'bold',
     fontSize: '1.125rem',
   });
 
   const Input = styled('input')({
-    padding: '8px',
+    padding: '0.625rem',
     marginBottom: '10px',
     border: '1px solid #ccc',
-    borderRadius: '4px',
+    borderRadius: '0.25rem',
     fontSize: '0.875rem',
     outline: 'none',
     backgroundColor: theme.palette.background.secondary,
   });
 
   const TextArea = styled('textarea')({
-    padding: '8px',
-    marginBottom: '10px',
+    padding: '0.625rem',
+    marginBottom: '0.625rem',
     border: '1px solid #ccc',
-    borderRadius: '4px',
+    borderRadius: '0.25rem',
     fontSize: '0.875rem',
-    height: '100px',
+    height: '6.25rem',
     resize: 'vertical',
     outline: 'none',
     backgroundColor: theme.palette.background.secondary,
   });
 
   const Button = styled('button')({
-    padding: '10px 20px',
+    padding: '0.625rem 1.25rem',
     backgroundColor: '#DAD2BC',
     color: '#252323',
-    borderWidth: '0px',
-    borderColor: '#252323',
-    borderRadius: '20px',
-    fontSize: '1rem',
+    borderWidth: '0rem',
+    //borderRadius: '1.25rem',
+    fontSize: '1.3rem',
+    fontFamily: 'Koulen, sans-serif',
     cursor: 'pointer',
     outline: 'none',
-    marginRight: '5px',
+    marginTop: '1rem',
+    alignSelf: 'center',
   });
 
   const form = useRef();
@@ -139,8 +141,8 @@ function Contact() {
       </LogoBox>
 
       <ContactText>
-        <Text>Please send an inquiry telling which artwork you are interested in, or if you have a custom work in mind.</Text>
-        <Text>Leave your name and email, so we can get back to you.</Text>
+        <Text>There's currently no artwork for sale but we'll keep you posted!</Text>
+        <Text>If you have any questions, please send us an email and we'll get back to you.</Text>
       </ContactText>
       <FormBox>
         <Form ref={form} onSubmit={sendEmail}>
@@ -150,9 +152,7 @@ function Contact() {
           <Input type="email" name="user_email" required />
           <Label>Message</Label>
           <TextArea name="message" required />
-          <Button type="submit">
-            <SendIcon style={{ marginLeft: '5px' }} />
-          </Button>
+          <Button type="submit">Send</Button>
         </Form>
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
           <Alert onClose={handleClose} severity="success">

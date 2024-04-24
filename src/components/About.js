@@ -56,8 +56,6 @@ function About() {
         padding: isMobile ? '0px' : '0.9375rem',
     });
 
-
-
     return (
         <MainBox>
             <LogoBox>

@@ -11,6 +11,9 @@
 #apikeys
 .env
 
+#build
+build/
+
 # production
 /build
 
